@@ -1,250 +1,138 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Contact | Sridhar R</title>
-
+    <title>Contact | Sridhar Ravi</title>
     <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-    <!-- Background Effects -->
-    <div class="background-circle circle-one"></div>
-    <div class="background-circle circle-two"></div>
-
-
-    <!-- Navigation -->
-    <nav class="navbar">
-
-        <div class="nav-logo">
-            SR
-        </div>
-
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="index.html#skills">Skills</a>
-            <a href="index.html#projects">Projects</a>
-            <a href="index.html#education">Education</a>
-        </div>
-
-    </nav>
-
-
     <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <h1 class="navbar__name">Sridhar Ravi</h1>
+            <ul class="navbar__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Contact Section -->
+        <section class="contact-section">
 
-        <!-- CONTACT HERO -->
-        <section class="contact-page">
-
-            <div class="contact-intro">
-
-                <p class="hero-small">
-                    GET IN TOUCH
-                </p>
-
-                <h1>
-                    Let's <span>Connect.</span>
-                </h1>
-
+            <div class="contact-heading">
+                <h1>Get In Touch</h1>
                 <p>
-                    I'm always open to discussing new opportunities,
-                    projects, collaborations, or anything related to
-                    technology and software development.
+                    Feel free to contact me for opportunities, collaborations,
+                    or any professional queries.
                 </p>
-
+            </div>
+            <div class="contact-content">
+                <!-- Contact Information -->
                 <div class="contact-info">
-
-                    <div class="contact-info-card">
-
-                        <div class="contact-icon">
-                            ✉
-                        </div>
-
-                        <div>
-                            <small>Email</small>
+                    <h2>Contact Information</h2>
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>
                             <a href="mailto:ravisridhar33@gmail.com">
                                 ravisridhar33@gmail.com
                             </a>
-                        </div>
-
+                        </p>
                     </div>
-
-
-                    <div class="contact-info-card">
-
-                        <div class="contact-icon">
-                            ☎
-                        </div>
-
-                        <div>
-                            <small>Phone</small>
+                    <div class="contact-item">
+                        <h3>Phone</h3>
+                        <p>
                             <a href="tel:+919360512536">
                                 +91 93605 12536
                             </a>
-                        </div>
-
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Location</h3>
+                        <p>Tiruppur, Tamil Nadu, India</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>LinkedIn</h3>
+                        <p>
+                            <a href="https://www.linkedin.com/in/sridhar-r-84a121280"
+                               target="_blank">
+                                Visit my LinkedIn
+                            </a>
+                        </p>
                     </div>
 
-
-                    <div class="contact-info-card">
-
-                        <div class="contact-icon">
-                            📍
-                        </div>
-
-                        <div>
-                            <small>Location</small>
-                            <p>
-                                Tiruppur, Tamil Nadu, India
-                            </p>
-                        </div>
-
+                    <div class="contact-item">
+                        <h3>GitHub</h3>
+                        <p>
+                            <a href="https://github.com/Sridhar1408"
+                               target="_blank">
+                                Visit my GitHub
+                            </a>
+                        </p>
                     </div>
-
                 </div>
-
-
-                <div class="contact-social">
-
-                    <a
-                        href="https://www.linkedin.com/in/sridhar-r-84a121280"
-                        target="_blank">
-                        LinkedIn ↗
-                    </a>
-
-                    <a
-                        href="https://github.com/Sridhar1408"
-                        target="_blank">
-                        GitHub ↗
-                    </a>
-
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Send Me a Message</h2>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="Enter subject"
+                                required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Write your message here..."
+                                required
+                            ></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
                 </div>
-
             </div>
-
-
-            <!-- CONTACT FORM -->
-
-            <div class="contact-form-card">
-
-                <div class="form-header">
-
-                    <span>CONTACT ME</span>
-
-                    <h2>
-                        Send a Message
-                    </h2>
-
-                    <p>
-                        Have an opportunity or question?
-                        Feel free to send me a message.
-                    </p>
-
-                </div>
-
-
-                <form>
-
-                    <div class="form-group">
-
-                        <label for="name">
-                            Your Name
-                        </label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Enter your name"
-                            required>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="email">
-                            Email Address
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Enter your email"
-                            required>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="message">
-                            Message
-                        </label>
-
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="6"
-                            placeholder="Write your message..."
-                            required></textarea>
-
-                    </div>
-
-
-                    <button
-                        type="submit"
-                        class="contact-form__submit">
-
-                        Send Message
-                        <span>→</span>
-
-                    </button>
-
-                </form>
-
+            <!-- Back to Home -->
+            <div class="back-home">
+                <a href="index.html">← Back to Home</a>
             </div>
-
         </section>
-
-
-        <!-- BACK HOME -->
-
-        <div class="back-home">
-
-            <a href="index.html">
-                ← Back to Portfolio
-            </a>
-
-        </div>
-
-
-        <!-- FOOTER -->
-
-        <footer>
-
-            <p>
-                © 2026 Sridhar R • Built with HTML & CSS
-            </p>
-
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 Sridhar Ravi. All Rights Reserved.</p>
         </footer>
-
     </div>
-
 </body>
-
 </html>
-```
