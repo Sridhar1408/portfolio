@@ -16,7 +16,6 @@ body {
     overflow-x: hidden;
 }
 
-/* ================= BACKGROUND ================= */
 
 body::before {
     content: "";
@@ -83,8 +82,6 @@ body::after {
 }
 
 
-/* ================= NAVBAR ================= */
-
 .navbar {
     width: 100%;
     max-width: 1100px;
@@ -128,19 +125,20 @@ body::after {
     font-weight: 700;
 }
 
-.nav-links {
+.navbar__links {
     display: flex;
     gap: 28px;
+    list-style: none;
 }
 
-.nav-links a {
+.navbar__links a {
     color: #cbd5e1;
     text-decoration: none;
     font-size: 14px;
     transition: 0.3s;
 }
 
-.nav-links a:hover {
+.navbar__links a:hover {
     color: white;
 }
 
